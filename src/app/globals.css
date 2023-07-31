@@ -1,27 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'react-alice-carousel/lib/alice-carousel.css';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.pagination-item {
+	@apply flex items-center justify-center px-4 h-10 ml-0 leading-tight  border  bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.pagination-item-active {
+	@apply flex items-center justify-center px-4 h-10 ml-0 leading-tight  border  bg-gray-800 border-gray-700 text-white font-bold text-base hover:bg-gray-700 hover:text-white pointer-events-none;
 }
