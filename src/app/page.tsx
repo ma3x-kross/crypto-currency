@@ -7,9 +7,8 @@ import Image from 'next/image'
 export default function Home() {
 	return (
 		<>
-			<Pagination count={10} currentPage={5} />
-			{/* <Banner />
-			<CoinsTable /> */}
+			<Banner />
+			<CoinsTable />
 		</>
 	)
 }

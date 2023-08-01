@@ -26,15 +26,6 @@ const Carousel = () => {
 		refetchOnWindowFocus: false,
 	})
 
-	console.log(data)
-
-	// const [trending, setTrending] = useState(TRENDING)
-
-	// const [trending, setTrending] = useState<any[]>()
-
-	// useEffect(() => {
-	// 	fetchData()
-	// }, [currency])
 
 	let items
 	if (data) {

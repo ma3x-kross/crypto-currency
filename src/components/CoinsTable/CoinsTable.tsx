@@ -144,8 +144,13 @@ const CoinsTable = () => {
 					</tbody>
 				</table>
 			</div>
-			{}
-			<Pagination count={handleSearch()?.length / 10} currentPage={page} />
+			<div className='mx-auto pb-4'>
+				<Pagination
+					count={handleSearch()?.length / 10}
+					currentPage={page}
+					handleClick={setPage}
+				/>
+			</div>
 		</section>
 	)
 }
